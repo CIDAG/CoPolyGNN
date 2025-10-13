@@ -2,7 +2,7 @@
 
 CoPolyGNN (CoPolymer Graph Neural Network) is a neural polymer encoder that integrates a GNN-based monomer encoder with an attention-based readout function to learn copolymer representations at multiple scales, while also handling simpler cases such as homopolymers (polymers comprised of a single monomer or repeating unit). CoPolyGNN takes advantage of a training strategy known as multi-task auxiliary learning, which helps the model prioritize the main task while leveraging auxiliary tasks for knowledge transfer. This makes its training process composed of two steps: (1) a pre-training phase that performs task selection, allowing the model to identify a subset of auxiliary tasks that best support the target task (see the pre-training folder for details), and (2) a fine-tuning phase that leverages the task selection from phase 1. Therefore, running phase 2 requires results from phase 1, such as the selected auxiliary task sets and the model for each fold.
 
-<img src='figs/copolygnn.png' width='400'>
+<img src='figs/copolygnn.png' width='800'>
 
 # Datasets
 
